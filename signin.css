@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#header_wrapper{
+    background-color: black;
+    width: 1200px;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 1% 50%;
+    border-bottom-right-radius: 1% 50%;
+}
+
+#header_wrapper > span {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    max-width: 100vw;
+    min-height: 100vh;
+    background: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+#sign_up-span {
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+#username_wrapper, #pass_wrapper, #radio_form, #phone_wrapper, #table_wrapper{
+    margin-top: 2rem;
+}
+
+#name, #password, #telephone{
+    width: 10rem;
+    height: 2rem;
+}
+
+#table_wrapper{
+    font-size: 1rem;
+}
+
+#radio_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sex_span{
+    margin-bottom: 1rem;
+}
+
+#sex2_label, #sex2{
+    margin-top: 1rem;
+}
+
+#username_error, #pass_error, #gen_error, #phone_error{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: red;
+}
+
+#btn-form {
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    font-size: 1.5rem;
+    border-radius: 5px ;
+    box-shadow: 0px 0px 2px grey;
+}
+
+#table_wrapper {
+    border: 1px solid black;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 53rem;
+}
+
+#name_row, #pass_row, #gen_row, #phone_row{
+    margin: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name_col, #pass_col, #gen_col, #phone_col{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 10rem;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#delete_row, #copy_row{
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#footer_wrapper{
+    background-color: black;
+    height: 2.5rem;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1% 50%;
+    border-top-right-radius: 1% 50%;
+}
+
+#footer_wrapper > span {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 970px){
+    #form{
+        max-width: 768px;
+    }
+}
+@media screen and (max-width: 768px){
+    #form{
+        max-width: 425px;
+        box-shadow: none;
+    }
+    .wrapper{
+        background-color: white;
+    }
+}
+@media screen and (max-width: 425px){
+    #form{
+        max-width: 320px;
+        box-shadow: none;
+        font-size: 1em;
+    }
+    .wrapper{
+        background-color: white;
+    }
+}

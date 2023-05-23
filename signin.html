@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab6</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+<div class="header">
+    <div id="header_wrapper">
+        <span>Lab6</span>
+    </div>
+</div>
+<div class="wrapper">
+    <form method="get" action="" id="form">
+        <span id="sign_up-span">Регістрація</span>
+        <div id="username_wrapper">
+            <label for="name" id="name_span">Name</label>
+            <input id="name" name="name" type="text">
+            <br>
+            <span id="username_error"></span>
+        </div>
+        <div id="pass_wrapper">
+            <label for="password" id="pass_span">Password</label>
+            <input id="password" name="password" type="password">
+            <br>
+            <span id="pass_error"></span>
+        </div>
+        <div id="radio_form">
+            <span id="sex_span">Виберіть свою стать:</span>
+            <label for="sex1" id="sex1_label">Чоловік</label>
+            <input type="radio" class="input_form_member" id="sex1" value="male" name="sex">
+            <label for="sex2" id="sex2_label">Жінка</label>
+            <input type="radio" class="input_form_member" id="sex2" value="woman" name="sex">
+            <br>
+            <span id="gen_error"></span>
+        </div>
+        <div id="phone_wrapper">
+            <label for="telephone" id="telephone_label">Телефон</label>
+            <input type="text" name="phone" id="telephone" placeholder="(380)-0000-00000">
+            <br>
+            <span id="phone_error"></span>
+        </div>
+        <button type="submit" id="btn-form">Зареєстуватись</button>
+        <div id="table_wrapper">
+            <div id="name_col">
+                <div id="name_row">
+                    <input type="checkbox" name="" id="checkbox_name">
+                    <label for="name_append">Name</label>
+                    <br>
+                    <span id="name_append"></span>
+                </div>
+            </div>
+            <br>
+            <div id="pass_col">
+                <div id="pass_row">
+                    <input type="checkbox" name="" id="checkbox_pass">
+                    <label for="pass_append">Password</label>
+                    <br>
+                    <span id="pass_append"></span>
+                </div>
+            </div>
+            <br>
+            <div id="gen_col">
+                <div id="gen_row">
+                    <input type="checkbox" name="" id="checkbox_gen">
+                    <label for="gen_append">Gender</label>
+                    <br>
+                    <span id="gen_append"></span>
+                </div>
+            </div>
+            <br>
+            <div id="phone_col">
+                <div id="phone_row">
+                    <input type="checkbox" name="" id="checkbox_phone">
+                    <label for="phone_append">Phone</label>
+                    <br>
+                    <span id="phone_append"></span>
+                </div>
+            </div>
+            <button id="delete_row">Delete row</button>
+            <button id="copy_row">Copy row</button>
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <div id="footer_wrapper">
+        <span>Made By Petrovskyi.M</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
